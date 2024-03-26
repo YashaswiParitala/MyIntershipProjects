@@ -1,0 +1,112 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.headbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+#logo {
+  color: blueviolet;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.place {
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+}
+
+#signup {
+  color: white;
+}
+
+/* Main Content */
+#title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.product h2 {
+  color: blueviolet;
+}
+
+.price {
+  background-color: #ff9d5c;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 5px 0;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .headbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin: 20px 0;
+  }
+}
